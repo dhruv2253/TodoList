@@ -7,6 +7,7 @@ const titleInput = document.querySelector('.titleinp');
 const descriptionInput = document.querySelector('.descriptioninp');
 const dueInput = document.querySelector('.dueinp');
 const priorityInput = document.querySelector('.priorinp');
+const todos = document.querySelector('.todos');
 class Todos{
 
     constructor(title, description, dueDate, priority){
@@ -25,7 +26,7 @@ function popUp(){
  
 }
 
-button.addEventListener('click', popUp)
+button.addEventListener('click', popUp);
 
 postTodo.addEventListener('click', postList);
 
@@ -39,4 +40,12 @@ function postList(e) {
     popup.style.display = "none";
     console.log(todo);
 
-}
+    const postedList = document.createElement('div');
+    postedList.classList.add('postedList');
+    const listInfo = document.createElement('p');
+    listInfo.classList.add('listInfo');
+    listInfo.textContent = `Title: ${todo.title} \n Description: ${todo.description} \n Due date: ${todo.dueDate} \n Priority: ${todo.priority} \n`;
+    console.log(listInfo.textContent);
+    postedList.appendChild(listInfo);
+    postedList.appendChild(todos);
+};
