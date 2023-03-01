@@ -36,4 +36,5 @@ input{
 .postedList{
     display: flex;
     height: 40px;
+    background-color: blue;
 }

@@ -47,5 +47,5 @@ function postList(e) {
     listInfo.textContent = `Title: ${todo.title} \n Description: ${todo.description} \n Due date: ${todo.dueDate} \n Priority: ${todo.priority} \n`;
     console.log(listInfo.textContent);
     postedList.appendChild(listInfo);
-    postedList.appendChild(todos);
+    todos.appendChild(postedList);
 };
