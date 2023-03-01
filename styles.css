@@ -6,7 +6,7 @@
     width: 50%;
     height: 50%;
     padding: 16px;;
-    background-color: black;
+    background-color: blue;
     z-index: 1002;
     overflow: auto;
 }
@@ -14,5 +14,21 @@
 .postTodo{
     background-color: white;
     padding: 10px;
+    margin-top: 80px;
     
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label {
+    padding: 10px;
+}
+
+input{
+    display: flex;
+    justify-content: center;
 }

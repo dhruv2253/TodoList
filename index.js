@@ -2,8 +2,12 @@ const button = document.querySelector('.create');
 const tododiv = document.querySelector('.todos');
 const popup = document.querySelector('.popup');
 const postTodo = document.querySelector('.postTodo');
-class todos{
-
+const form = document.querySelector('.form');
+const titleInput = document.querySelector('.titleinp');
+const descriptionInput = document.querySelector('.descriptioninp');
+const dueInput = document.querySelector('.dueinp');
+const priorityInput = document.querySelector('.priorinp');
+class Todos{
 
     constructor(title, description, dueDate, priority){
         this.title = title;
@@ -18,11 +22,21 @@ class todos{
 
 function popUp(){
    popup.style.display = "block";
-   console.log('ff');
+ 
 }
 
 button.addEventListener('click', popUp)
 
-postTodo.addEventListener('click', () =>{
+postTodo.addEventListener('click', postList);
+
+function postList(e) {
+    e.preventDefault();
+    title = titleInput.value;
+    description = descriptionInput.value;
+    dueDate = dueInput.value;
+    priority = priorityInput.value;
+    todo = new Todos(title, description, dueDate, priority);
     popup.style.display = "none";
-})
+    console.log(todo);
+
+}
