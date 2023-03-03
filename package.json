@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "date-fns": "^2.29.3"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
+  },
+  "name": "todolist",
+  "description": "Todo list website called WYD? Add tasks that are needed to complete and even create different projects to add the tasks to.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack build",
+    "watch": "npx webpack watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhruv2253/TodoList.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhruv2253/TodoList/issues"
+  },
+  "homepage": "https://github.com/dhruv2253/TodoList#readme"
+}

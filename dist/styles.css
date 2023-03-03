@@ -37,4 +37,5 @@ input{
     display: flex;
     height: 40px;
     background-color: blue;
+    justify-content: space-between;
 }
